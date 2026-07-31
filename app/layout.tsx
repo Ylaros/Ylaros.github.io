@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Aloyr — Engenharia de produto",
   description: "Portfólio de engenharia de produto, arquitetura full stack e experiências B2B seguras.",
   openGraph: {
-    title: "Aloyr — Sistemas complexos, tornados legíveis.",
+    title: "Aloyr — Sistemas personalizados para necessidades reais",
     description: "Engenharia de produto, arquitetura full stack e experiências B2B seguras.",
     images: [{ url: "/og-custom.png", width: 1536, height: 1024, alt: "Aloyr — sistemas personalizados para necessidades reais" }],
   },
