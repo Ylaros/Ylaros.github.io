@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Aloyr — Sistemas complexos, tornados legíveis.",
     description: "Engenharia de produto, arquitetura full stack e experiências B2B seguras.",
-    images: [{ url: "/og.png", width: 1536, height: 1024, alt: "Aloyr — sistemas complexos, tornados legíveis" }],
+    images: [{ url: "/og-custom.png", width: 1536, height: 1024, alt: "Aloyr — sistemas personalizados para necessidades reais" }],
   },
-  twitter: { card: "summary_large_image", images: ["/og.png"] },
+  twitter: { card: "summary_large_image", images: ["/og-custom.png"] },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
