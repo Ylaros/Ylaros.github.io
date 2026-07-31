@@ -43,7 +43,7 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-kicker"><span /> Engenharia de produto · Full stack</div>
-        <h1>Sistemas complexos,<br /><em>tornados legíveis.</em></h1>
+        <h1>Sistemas personalizados<br /><em>para necessidades reais.</em></h1>
         <div className="hero-footer">
           <p>
             Projeto experiências B2B onde produto, arquitetura e segurança
@@ -58,6 +58,11 @@ export default function Home() {
         <p>Rigor para quem opera.</p>
         <p>Confiança para quem decide.</p>
       </section>
+
+      <figure className="manifesto-visual">
+        <figcaption><span>Manifesto visual</span><b>Aloyr · Engenharia de produto</b></figcaption>
+        <img src="/og-custom.png" width="1536" height="1024" alt="Aloyr — Sistemas Personalizados para Necessidades Reais" />
+      </figure>
 
       <section className="work" id="trabalho">
         <div className="section-label">Trabalho selecionado <span>2026</span></div>
