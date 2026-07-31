@@ -1,6 +1,10 @@
 # Aloyr — portfólio
 
-Portfólio privado em desenvolvimento. O projeto apresenta uma abordagem de engenharia de produto e referencia uma demonstração fictícia, sem reutilizar código, telas, dados ou infraestrutura do ZNS real.
+Portfólio público de Aloyr. O projeto apresenta uma abordagem de engenharia de produto, uma página de stack e exemplos de código autorais, além de referenciar uma demonstração fictícia — tudo sem reutilizar código, telas, dados ou infraestrutura do produto real.
+
+- Site: https://ylaros.github.io/
+- Engenharia e código: https://ylaros.github.io/engenharia/
+- Demonstração: https://ylaros.github.io/zns-portfolio-demo/
 
 ## Desenvolvimento local
 
@@ -17,4 +21,4 @@ npm test
 npm run build:pages
 ```
 
-O GitHub Pages não está habilitado. Consulte `docs/PUBLISHING.md` somente após aprovação manual do conteúdo e da auditoria.
+O deploy é feito por GitHub Actions após alterações aprovadas na branch `main`.

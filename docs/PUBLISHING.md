@@ -1,14 +1,13 @@
-# Publicação futura — bloqueada até aprovação manual
+# Publicação aprovada
 
-O repositório deve permanecer privado durante implementação e revisão. O GitHub Pages não deve ser ativado antes da aprovação expressa do proprietário.
+A publicação foi autorizada pelo proprietário após revisão privada. O workflow ativo valida e publica somente a saída estática gerada a partir da branch `main`.
 
-Após aprovação:
+Para uma nova versão:
 
 1. Revise novamente arquivos e histórico Git conforme `SECURITY.md`.
-2. Torne `Ylaros/Ylaros.github.io` público manualmente em **Settings → General → Danger Zone**.
-3. Copie `docs/pages-workflow.yml.example` para `.github/workflows/pages.yml`.
-4. Em **Settings → Pages**, selecione **GitHub Actions** como fonte.
-5. Execute o workflow manualmente e valide a URL publicada.
-6. Faça uma nova verificação de dados privados antes de divulgar o endereço.
+2. Abra uma pull request a partir de uma branch separada.
+3. Aguarde lint, build, testes e auditoria.
+4. Faça merge em `main`; o workflow `.github/workflows/pages.yml` publica o site.
+5. Valide `https://ylaros.github.io/` e repita a verificação de dados privados.
 
 Não há domínio próprio configurado.

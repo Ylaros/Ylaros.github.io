@@ -35,6 +35,7 @@ export default function Home() {
         </a>
         <nav aria-label="Navegação principal">
           <a href="#trabalho">Trabalho</a>
+          <a href="/engenharia/">Engenharia</a>
           <a href="#abordagem">Abordagem</a>
           <a href="#contato">Contato</a>
         </nav>
@@ -71,9 +72,14 @@ export default function Home() {
             <div className="case-tags">
               <span>Product design</span><span>Full stack</span><span>Security by design</span>
             </div>
-            <a className="text-link" href="https://github.com/Ylaros/zns-portfolio-demo">
-              Explorar demonstração <span>↗</span>
-            </a>
+            <div className="case-links">
+              <a className="text-link" href="https://ylaros.github.io/zns-portfolio-demo/">
+                Abrir demonstração <span>↗</span>
+              </a>
+              <a className="text-link secondary-link" href="https://github.com/Ylaros/zns-portfolio-demo">
+                Ver código <span>↗</span>
+              </a>
+            </div>
           </div>
           <div className="case-visual" aria-label="Composição abstrata de um painel operacional">
             <div className="visual-top"><span>OPERAÇÃO / VISÃO GERAL</span><b>● ONLINE</b></div>
@@ -109,6 +115,11 @@ export default function Home() {
         <div className="capabilities">
           {capabilities.map((capability) => <span key={capability}>{capability}</span>)}
         </div>
+        <a className="engineering-cta" href="/engenharia/">
+          <span>Stack & código</span>
+          <strong>Conheça as tecnologias e veja exemplos autorais.</strong>
+          <i>↗</i>
+        </a>
       </section>
 
       <section className="security-note" aria-label="Compromisso de privacidade">
