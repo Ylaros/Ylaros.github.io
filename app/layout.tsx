@@ -1,0 +1,22 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://ylaros.github.io"),
+  title: "Aloyr — Engenharia de produto",
+  description: "Portfólio de engenharia de produto, arquitetura full stack e experiências B2B seguras.",
+  openGraph: {
+    title: "Aloyr — Sistemas complexos, tornados legíveis.",
+    description: "Engenharia de produto, arquitetura full stack e experiências B2B seguras.",
+    images: [{ url: "/og.png", width: 1536, height: 1024, alt: "Aloyr — sistemas complexos, tornados legíveis" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/og.png"] },
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="pt-BR">
+      <body>{children}</body>
+    </html>
+  );
+}
