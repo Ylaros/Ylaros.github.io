@@ -9,7 +9,10 @@ test("o build estático contém o portfólio final", async () => {
   assert.match(html, /Sistemas personalizados para necessidades reais/);
   assert.match(html, /og-custom\.png/);
   assert.match(html, /Manifesto visual/);
-  assert.match(html, /100% SYNTHETIC DATA/);
+  assert.match(html, /ZNS \/ NEXAFLOW/);
+  assert.match(html, /plataforma web multi-tenant/);
+  assert.match(html, /zns-portfolio-demo/);
+  assert.match(html, /DEMONSTRAÇÃO PÚBLICA/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/);
 });
 

@@ -17,12 +17,12 @@ const pillars = [
 ];
 
 const capabilities = [
-  "Arquitetura full stack",
+  "Análise de sistemas",
+  "Automação de processos",
+  "Dados, BI e integrações",
   "Sistemas multi-tenant",
   "RBAC e trilhas de auditoria",
-  "Automação de operações",
-  "Experiência de produto B2B",
-  "Qualidade e observabilidade",
+  "Engenharia de produto B2B",
 ];
 
 export default function Home() {
@@ -42,11 +42,11 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <div className="hero-kicker"><span /> Engenharia de produto · Full stack</div>
+        <div className="hero-kicker"><span /> Sistemas · Automação · Dados</div>
         <h1>Sistemas personalizados<br /><em>para necessidades reais.</em></h1>
         <div className="hero-footer">
           <p>
-            Projeto experiências B2B onde produto, arquitetura e segurança
+            Projeto soluções B2B onde processos, dados, automação e segurança
             trabalham como um sistema único.
           </p>
           <a className="circle-link" href="#trabalho" aria-label="Ver trabalho selecionado">↘</a>
@@ -68,21 +68,23 @@ export default function Home() {
         <div className="section-label">Trabalho selecionado <span>2026</span></div>
         <article className="case-card">
           <div className="case-copy">
-            <div className="case-number">CASO / 01</div>
-            <h2>Uma operação inteira<br />em uma única leitura.</h2>
+            <div className="case-number">CASO / 01 · ZNS / NEXAFLOW</div>
+            <h2>ZNS: operação fiscal<br />em uma única leitura.</h2>
             <p>
-              Demonstração conceitual de uma plataforma de operações para
-              escritórios. Dados, empresas e fluxos são integralmente fictícios.
+              O ZNS é uma plataforma web multi-tenant em desenvolvimento para
+              escritórios contábeis e empresas clientes. O NexaFlow demonstra
+              publicamente seus conceitos de documentos fiscais, classificação,
+              operações, auditoria, relatórios e integrações usando somente dados fictícios.
             </p>
             <div className="case-tags">
-              <span>Product design</span><span>Full stack</span><span>Security by design</span>
+              <span>Análise de sistemas</span><span>Automação</span><span>Dados & integrações</span>
             </div>
             <div className="case-links">
               <a className="text-link" href="https://ylaros.github.io/zns-portfolio-demo/">
-                Abrir demonstração <span>↗</span>
+                Conhecer o ZNS no NexaFlow <span>↗</span>
               </a>
               <a className="text-link secondary-link" href="https://github.com/Ylaros/zns-portfolio-demo">
-                Ver código <span>↗</span>
+                Repositório da demonstração <span>↗</span>
               </a>
             </div>
           </div>
@@ -101,7 +103,7 @@ export default function Home() {
                 <div><span>Vértice Teste</span><b>Pendente</b></div>
               </div>
             </div>
-            <div className="privacy-stamp">100% SYNTHETIC DATA</div>
+            <div className="privacy-stamp">DEMONSTRAÇÃO PÚBLICA · DADOS FICTÍCIOS</div>
           </div>
         </article>
       </section>
