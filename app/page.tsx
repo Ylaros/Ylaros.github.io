@@ -23,6 +23,7 @@ const capabilities = [
   "Sistemas multi-tenant",
   "RBAC e trilhas de auditoria",
   "Engenharia de produto B2B",
+  "IA aplicada com modelos locais",
 ];
 
 export default function Home() {
@@ -46,7 +47,7 @@ export default function Home() {
         <h1>Sistemas personalizados<br /><em>para necessidades reais.</em></h1>
         <div className="hero-footer">
           <p>
-            Projeto soluções B2B onde processos, dados, automação e segurança
+            Projeto soluções B2B onde processos, dados, automação, IA aplicada e segurança
             trabalham como um sistema único.
           </p>
           <a className="circle-link" href="#trabalho" aria-label="Ver trabalho selecionado">↘</a>
@@ -76,8 +77,15 @@ export default function Home() {
               publicamente seus conceitos de documentos fiscais, classificação,
               operações, auditoria, relatórios e integrações usando somente dados fictícios.
             </p>
+            <p>
+              No produto de referência, também desenvolvo IA local com Ollama para
+              triagem de atendimentos, sugestões editáveis de resposta e resumos de
+              conversas, com regras de negócio, permissões e fallback seguro.
+              Esses recursos são descritos na página de Engenharia; a demonstração
+              pública não executa os modelos nem acessa o sistema real.
+            </p>
             <div className="case-tags">
-              <span>Análise de sistemas</span><span>Automação</span><span>Dados & integrações</span>
+              <span>Análise de sistemas</span><span>Automação</span><span>Dados & integrações</span><span>IA local · Ollama</span>
             </div>
             <div className="case-links">
               <a className="text-link" href="https://ylaros.github.io/zns-portfolio-demo/">
@@ -85,6 +93,9 @@ export default function Home() {
               </a>
               <a className="text-link secondary-link" href="https://github.com/Ylaros/zns-portfolio-demo">
                 Repositório da demonstração <span>↗</span>
+              </a>
+              <a className="text-link secondary-link" href="/engenharia/#ia-aplicada">
+                IA aplicada no ZNS <span>↗</span>
               </a>
             </div>
           </div>

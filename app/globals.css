@@ -78,7 +78,10 @@ nav a:hover, .text-link:hover { opacity:.55; }
 .stack-grid article { padding:38px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); min-height:330px; }
 .stack-heading { display:flex; align-items:flex-start; gap:24px; }
 .stack-heading>span { font:10px monospace; color:var(--muted); padding-top:7px; }
-.stack-heading h2 { margin:0; font-size:30px; letter-spacing:-.04em; }
+.stack-heading h2,.stack-heading h3 { margin:0; font-size:30px; letter-spacing:-.04em; }
+.ai-intro { max-width:850px; margin-top:48px; }
+.ai-intro h2 { margin:0 0 24px; font-size:clamp(32px,5vw,58px); line-height:1.05; letter-spacing:-.04em; }
+.ai-intro p { margin:0; color:var(--muted); font-size:17px; line-height:1.65; }
 .stack-grid article>p { max-width:510px; margin:22px 0 34px 42px; color:var(--muted); font-size:14px; line-height:1.6; }
 .stack-items { display:flex; flex-wrap:wrap; gap:7px; margin-left:42px; }
 .stack-items span { padding:8px 11px; border:1px solid var(--line); border-radius:30px; background:#f7f6f1; font:9px monospace; text-transform:uppercase; }

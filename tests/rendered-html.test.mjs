@@ -13,6 +13,9 @@ test("o build estático contém o portfólio final", async () => {
   assert.match(html, /plataforma web multi-tenant/);
   assert.match(html, /zns-portfolio-demo/);
   assert.match(html, /DEMONSTRAÇÃO PÚBLICA/);
+  assert.match(html, /engenharia\/#ia-aplicada/);
+  assert.match(html, /IA local com Ollama/);
+  assert.match(html, /pública não executa os modelos/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/);
 });
 
@@ -24,5 +27,10 @@ test("a página de engenharia apresenta stack e somente código sintético", asy
   assert.match(html, /React Query/);
   assert.match(html, /100% autoral e sintético/);
   assert.match(html, /documents\.read/);
+  assert.match(html, /id="ia-aplicada"/);
+  assert.match(html, /IA aplicada no ZNS/);
+  assert.match(html, /sem envio automático/);
+  assert.match(html, /Fallback determinístico/);
+  assert.match(html, /não executam Ollama ou LLMs/);
   assert.doesNotMatch(html, /192\.168\.|testehub|hub\.exatta|Zion-Netic-SaaS/);
 });

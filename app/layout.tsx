@@ -4,10 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://ylaros.github.io"),
   title: "Aloyr — Sistemas, automação e dados",
-  description: "Portfólio de análise de sistemas, automação, dados, integrações e engenharia de produto B2B.",
+  description: "Portfólio de análise de sistemas, automação, dados, integrações, IA aplicada com modelos locais e engenharia de produto B2B.",
   openGraph: {
     title: "Aloyr — Sistemas personalizados para necessidades reais",
-    description: "Análise de sistemas, automação, dados, integrações e engenharia de produto B2B.",
+    description: "Análise de sistemas, automação, dados, integrações e IA local com foco em problemas reais de negócio.",
     images: [{ url: "/og-custom.png", width: 1536, height: 1024, alt: "Aloyr — sistemas personalizados para necessidades reais" }],
   },
   twitter: { card: "summary_large_image", images: ["/og-custom.png"] },
