@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Engenharia & código — Aloyr",
-  description: "Stack técnica e exemplos autorais de arquitetura full stack, segurança e processamento assíncrono.",
+  description: "Stack técnica, IA local com Ollama e exemplos autorais de arquitetura, segurança e processamento assíncrono.",
 };
 
 const stackGroups = [
@@ -34,13 +34,40 @@ const stackGroups = [
     index: "05",
     title: "Infraestrutura & operação",
     description: "Builds reprodutíveis, processos observáveis e operação preparada para ambientes privados.",
-    items: ["Windows Server", "PowerShell", "Docker", "Cloudflare Tunnel", "Caddy", "Git", "GitHub Actions", "Ollama", "Modelos locais"],
+    items: ["Windows Server", "PowerShell", "Docker", "Cloudflare Tunnel", "Caddy", "Git", "GitHub Actions"],
   },
   {
     index: "06",
     title: "Qualidade & segurança",
     description: "Validação contínua com segurança aplicada no backend e rastreabilidade operacional.",
     items: ["Pytest", "Vitest", "Testing Library", "Playwright Test", "ESLint", "Type checking", "npm audit", "RBAC", "Multi-tenant", "Audit logs", "CORS", "Rate limiting", "Secure cookies"],
+  },
+  {
+    index: "07",
+    title: "IA aplicada & modelos locais",
+    description: "Inferência local integrada a fluxos de negócio, com limites explícitos e retorno seguro ao fluxo determinístico.",
+    items: ["Ollama", "LLMs locais", "Saída estruturada em JSON", "Limites de confiança", "Guardrails", "Fallback determinístico", "Circuit breaker", "Controle de concorrência", "Revisão humana"],
+  },
+];
+
+const aiUseCases = [
+  {
+    index: "01",
+    title: "Triagem com limites",
+    description: "A IA sugere o departamento de atendimento a partir de uma saída estruturada e de um limite de confiança. Baixa confiança, resposta inválida ou departamento desconhecido devolvem a decisão ao fluxo determinístico.",
+    items: ["Classificação de atendimentos", "Validação de JSON", "Departamentos permitidos"],
+  },
+  {
+    index: "02",
+    title: "Apoio ao atendente",
+    description: "Sugestões de resposta permanecem como rascunhos editáveis, sem envio automático. Resumos de conversas apoiam a continuidade do atendimento, preservando o julgamento e a responsabilidade da equipe.",
+    items: ["Rascunhos editáveis", "Resumos de conversas", "Acesso restrito à equipe"],
+  },
+  {
+    index: "03",
+    title: "Segurança e continuidade",
+    description: "Modelos locais via Ollama se integram a permissões no backend e isolamento por escritório/empresa. Guardrails limitam respostas; timeouts, circuit breaker e controle de concorrência contêm falhas sem interromper o fluxo principal.",
+    items: ["Processamento local", "RBAC e isolamento", "Fallback e observabilidade"],
   },
 ];
 
@@ -97,6 +124,7 @@ export default function EngineeringPage() {
         <nav aria-label="Navegação da página">
           <a href="/">Portfólio</a>
           <a href="#stack">Tecnologias</a>
+          <a href="#ia-aplicada">IA aplicada</a>
           <a href="#codigo">Código</a>
           <a href="https://ylaros.github.io/zns-portfolio-demo/">Demo ↗</a>
         </nav>
@@ -125,6 +153,37 @@ export default function EngineeringPage() {
           ))}
         </div>
         <p className="public-scope-note">Inventário deliberadamente limitado a tecnologias e práticas públicas. Configurações, endereços, nomes internos e integrações identificáveis não são exibidos.</p>
+      </section>
+
+      <section className="stack-section" id="ia-aplicada" aria-labelledby="ai-title">
+        <div className="section-label">IA aplicada no ZNS <span>Contexto, limites e operação</span></div>
+        <div className="ai-intro">
+          <h2 id="ai-title">IA como apoio.<br />Regras de negócio como base.</h2>
+          <p>
+            Minha atuação inclui projetar e implementar a integração de modelos de
+            linguagem locais ao atendimento do ZNS: do caso de uso à validação da
+            resposta, às permissões e ao tratamento de falhas. A IA é uma camada
+            opcional, não a fonte de verdade do sistema nem um serviço de
+            aconselhamento fiscal, contábil ou jurídico.
+          </p>
+        </div>
+        <div className="stack-grid">
+          {aiUseCases.map((useCase) => (
+            <article key={useCase.index}>
+              <div className="stack-heading"><span>{useCase.index}</span><h3>{useCase.title}</h3></div>
+              <p>{useCase.description}</p>
+              <div className="stack-items">
+                {useCase.items.map((item) => <span key={item}>{item}</span>)}
+              </div>
+            </article>
+          ))}
+        </div>
+        <p className="public-scope-note">
+          Esta seção documenta a experiência no produto de referência. O portfólio
+          e o NexaFlow não executam Ollama ou LLMs e não se conectam ao produto real.
+          A demonstração usa somente dados fictícios; nenhum prompt, conversa ou
+          dado de cliente é exposto aqui.
+        </p>
       </section>
 
       <section className="code-section" id="codigo">
